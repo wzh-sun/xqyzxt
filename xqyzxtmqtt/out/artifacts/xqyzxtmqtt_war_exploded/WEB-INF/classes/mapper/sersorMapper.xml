@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzhsun.entity.Sersor">
+    <!--查询传感器信息管理-->
+    <select id="findsersor" resultType="com.wzhsun.entity.Sersor">
+        select bartonId,bartonName,bartonGroup,bartonUser,bartonStutas from barton
+    </select>
+
+</mapper>

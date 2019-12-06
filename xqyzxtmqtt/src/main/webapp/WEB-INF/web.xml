@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID">
+    <display-name>xqyzxtmqtt</display-name>
+
+    <!--默认启动页面-->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!--后台获取mqtt数据监听线程-->
+    <listener>
+        <listener-class>com.wzhsun.listener.MyListener</listener-class>
+    </listener>
+
+    <!--用户登录拦截过滤器-->
+    <filter>
+        <filter-name>login</filter-name>
+        <filter-class>com.wzhsun.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>login</filter-name>
+        <url-pattern>/barton.jsp</url-pattern>
+        <url-pattern>/charts.jsp</url-pattern>
+        <url-pattern>/control.jsp</url-pattern>
+        <url-pattern>/forms.jsp</url-pattern>
+        <url-pattern>/index.jsp</url-pattern>
+        <url-pattern>/tables.jsp</url-pattern>
+        <url-pattern>/management.jsp</url-pattern>
+        <url-pattern>/check.jsp</url-pattern>
+    </filter-mapping>
+
+    <!--禁止浏览器默认缓存的过滤器-->
+    <filter>
+        <filter-name>noCacheFilter</filter-name>
+        <filter-class>com.wzhsun.filter.NoCacheFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>noCacheFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern><!--设置本项目中所有jsp页面缓存过滤-->
+    </filter-mapping>
+
+    <!--开启webSocket服务的过滤器-->
+    <!--<filter>
+        <filter-name>startFilter</filter-name>
+        <filter-class>com.wzhsun.filter.StartFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>startFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>-->
+
+    <!--报错页面的配置-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/error/404.html</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/error/500.html</location>
+    </error-page>
+
+</web-app>

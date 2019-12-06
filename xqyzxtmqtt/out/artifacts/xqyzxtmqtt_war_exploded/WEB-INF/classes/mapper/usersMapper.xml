@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzhsun.entity.Users">
+    <!--用户账号查询-->
+    <select id="findUsers" resultType="com.wzhsun.entity.Users">
+        select * from users
+    </select>
+
+    <!--登录信息-->
+    <select id="findLogin" resultType="com.wzhsun.entity.Users">
+        select userId,userNickName,userName,passwd,userphone,stutas,userAdd,describes from users
+        <if test="userId != null">
+            where userId = #{userId}
+        </if>
+    </select>
+
+    <!--添加数据进数据库-->
+    <!--<insert id="addSd" parameterType="com.wzhsun.entity.Sersor_data">
+        insert into sersor_data(s_d_data,s_d_SNum)
+        values(#{s_d_data},#{s_d_SNum})
+    </insert>-->
+</mapper>

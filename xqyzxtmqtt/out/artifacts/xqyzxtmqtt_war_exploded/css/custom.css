@@ -1,0 +1,167 @@
+/* your styles go here */
+.date-list {
+    height: 100%;
+    width: 100%;
+}
+div .actions {
+    width: 100%;
+    height: 50px;
+    background: #43473d;
+}
+div .action {
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.actions ul > li {
+    float: left;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 13px;
+    cursor: pointer;
+    border-right: 2px solid #ffffff;
+    color: white;
+}
+.actiones {
+    background-color: #9eafff; /*列表选中的颜色*/
+}
+
+.botton .date {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    display: none;
+    position: absolute;
+}
+
+.botton .date.select {
+    display: block;
+}
+.barton {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.barton1 {
+    /*position: absolute;*/
+    width: 200px;
+    height: 200px;
+    top: 30px;
+    left: 60px;
+    background-color: #ffffff;
+    border: 2px solid #E8E8E8;
+}
+.barton1 div img {
+    width: 50%;
+    height: 50%;
+    margin: 22% 0 0 24%;
+}
+.barton1 .span-2em {
+    width: 100%;
+    margin-top: 20px;
+}
+.barton1 .span-2em .span-1em {
+    width: 80%;
+    height: 10%;
+    margin: 0 auto;
+    background: #00A4FF;
+}
+.barton1 .span-2em .span-1em p {
+    margin: 0 auto;
+}
+/*警告指示灯*/
+.frame {
+    float: right;
+    height: 110px;
+    width: 110px;
+    background-color: red;
+    border-radius: 100px;
+    margin-right: 60px;
+    margin-top: 50px;
+}
+.place-fixed {
+    width: 100%;
+    height: 32px;
+    margin-top:25px;
+}
+/*阈值设置*/
+.yuzhi{
+    width: 220px;
+    height: 210px;
+    border: 1px solid #040505;
+    margin: 100px auto;
+    border-radius: 10px;
+    float: right;
+    margin: 200px -155px 0 0;
+}
+.yuzhi h3{
+    margin-top: 15px;
+    text-align: center;
+}
+.yuzhi span{
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    margin: 15px 0 0 20px;
+}
+.yuzhi span input{
+    margin-left: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+.yuzhi em{
+    width: 200px;
+    height: 60px;
+    float: left;
+    padding: 20px 0 0 0;
+}
+.yuzhi button{
+    font-size: 14px;
+    font-weight: bold;
+    width: 70px;
+    height: 40px;
+    background-color: #20c997;
+    border-radius: 15px;
+    float: left;
+    margin-left: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.user{
+    margin-left: 82%;
+}
+.user a{
+    color: white;
+    text-decoration: none;
+}
+.input-w{
+    width: 100%;
+    padding-left: 5px;
+}
+.change{
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 80%;
+}
+.set-time{
+    width: 100%;
+    height: 50px;
+}
+.set-time input{
+    width: 200px;
+    font-size: 23px;
+}
+.set-time1{
+    width: 100%;
+    height: 50px;
+}
+.set-time1 p{
+    font-size: 40px;
+    margin-left: 30px;
+}

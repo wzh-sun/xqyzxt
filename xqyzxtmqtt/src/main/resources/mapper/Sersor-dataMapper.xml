@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzhsun.entity.Sersor_data">
+
+    <!--select s_d_Id,s_d_data,s_d_SNum from sersor_data order by s_d_Id desc limit 2-->
+    <!--查询数据-->
+    <select id="findData" resultType="com.wzhsun.entity.Sersor_data">
+        select s_d_Id,s_d_data,s_d_SNum from sersor_data order by s_d_Id desc limit 2
+    </select>
+    <!--添加数据进数据库-->
+    <insert id="addSd" parameterType="com.wzhsun.entity.Sersor_data">
+        insert into sersor_data(s_d_data,s_d_SNum)
+        values(#{s_d_data},#{s_d_SNum})
+    </insert>
+</mapper>

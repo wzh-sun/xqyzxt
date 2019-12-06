@@ -1,0 +1,9 @@
+<!--调用没有返回值和参数的java方法-->
+<dwr>
+    <allow>
+        <create creator="new" javascript="testClass" >
+            <param name="class" value="com.dwr.TestClass" />
+            <include method="testMethod1"/>
+        </create>
+    </allow>
+</dwr>
