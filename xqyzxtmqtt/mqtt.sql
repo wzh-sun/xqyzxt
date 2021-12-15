@@ -14,9 +14,9 @@ create table users(
     describes varchar(50) comment ' 用户描述'
 )engine=innodb charset=utf8;
 
-insert into users values(null,'汪中华','root1',md5(111111),'18779455583',2,'江西省赣州市江西环境工程职业学院','系统开发师'),
-(null,'廖磊鑫','root2',md5(123123),'131********',2,'江西省赣州市江西环境工程职业学院','数据分析师'),
-(null,'普通用户1','user1',md5(111111),'110110',1,'江西省赣州市江西环境工程职业学院','测试用户1号');
+insert into users values(null,'王多鱼','root1',md5(111111),'18879796767',2,'江西省的人','系统开发师'),
+(null,'王多鱼2号','root2',md5(123123),'131********',2,'江西省的人','数据分析师'),
+(null,'普通用户1','user1',md5(111111),'110110',1,'江西省的人','测试用户1号');
 
 DROP TABLE IF EXISTS `barton`;
 create table barton(
